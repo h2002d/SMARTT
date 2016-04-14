@@ -1,0 +1,117 @@
+﻿@model smart_Taxi.Models.Users
+
+@{
+    ViewBag.Title = "OnlineMap_web";
+    Layout = "~/Views/_LayoutMobile.cshtml";
+}
+
+<script src="~/Content/jquery-1.11.1.js"></script>
+@*<link rel="stylesheet" type="text/css" href="~/Content/Site.css">*@
+
+<div style="color: #FFC102;text-shadow: 15px 5px 6px black;font-size: 1.5em; background: #003682; opacity: 0.8; position: absolute; top: 30%; left: 30%; z-index: 99999; border-radius: 15px; padding: 5px;">Պատվերը ընդունված</div>
+
+<div style="color: #FFC102;text-shadow: 15px 5px 6px black;font-size: 1.5em; background: #003682; opacity: 0.8; position: absolute; top: 48%; left: 30%; z-index: 99999; border-radius: 15px; padding: 5px;">Վարորդը հասել է</div>
+
+<div id="header">
+    <font id="logo_text">Սմարթ</br>Տաքսի</font>
+    <img src="../Content/Images/Avto_1.png" id="logo" onclick="again()" />
+    <font id="hamar">10 11 10</font>
+    <font id="kod">055</font>
+    <font id="kod_1">099</font>
+    <font id="kod_2">077</font>
+    <font id="kod_3">011</font>
+    <div class="header-content">
+        <div id="icon"></div>
+        <div id="icon_1"></div>
+        <div id="icon_2"></div>
+        <div class="cb"></div>
+        
+    </div>
+    
+</div>
+<div class="main-buttons" style="top:90% !important;">
+    <div id="order_button" class="main-btn" style="">
+        Պատվիրել
+    </div>
+</div>
+<div id="log_out_user" style="position: absolute;
+font-size: 18px;
+cursor: pointer;
+top: 15px;
+right: 15px;
+color: #FFC102;
+z-index: 9999999;">
+    Դուրս Գալ
+</div>
+<div id="approve_order">
+    <div class="text_approve">Եթե ձեր ընտրած հասցեն Ճիշտ է խնդրում ենք սեղմել Պատվիրել կոճակը:</div>
+    <div class="main-btn main-btn-popup" style="" id="order-btn">
+        Պատվիրել
+    </div>
+</div>
+<script>
+
+    $(document).ready(function () {
+        $('#order_button').click(function () {
+            if ($('#approve_order').css('display') == 'none') {
+                $('#approve_order').fadeIn();
+            }
+            else {
+                $('#approve_order').fadeOut();
+            }
+        });
+        setInterval('getDriversLocation()', 16700);
+       
+    });
+
+
+    function getDriversLocation() {
+        $.ajax({
+            type: "POST",/*method type*/
+            contentType: "application/json; charset=utf-8",
+            url:'@Url.Action("GetDriversPositions", "Home")',/*Target function that will be return result*/
+            //data: JSON.stringify({ name: name, phone: phone, carname: carname, plate: plate, color: color, distrinct: distrinct, password: password }),
+            success: function (data) {
+                deleteMarkers();
+                $.each(data, function (index, item) {
+
+                    var image = '@Url.Content("~/Content/Images/pointer.png")';
+                    // $("#cat").append('<li>'+item.Name+'</li>');
+                    var myLatlng = new google.maps.LatLng(item.Latitude, item.Longitude);
+                    // alert(item.Name);
+
+                    addMarker(myLatlng, image, item.Name);
+                    ////var marker = new google.maps.Marker({
+                    ////    position: myLatlng,
+                    ////    map: map,                            
+                    ////    title: item.name
+                    ////});                       
+                });
+            },
+            error: function () {
+                alert("Error");
+            }
+        });
+    }
+    function checkOrderStatus() {
+        $.ajax({
+            type: "POST",/*method type*/
+            contentType: "application/json; charset=utf-8",            
+            url: '@Url.Action("checkOrderStatus", "Home")',
+            success: function (data) {
+                var status = data.split(",");
+                if(status[0]=="1")
+                {
+                    //yndunelu action
+                    alert(status[1]);
+                }
+                else
+                    if (status[0] == "2")
+                    {
+                        //hasela tegh
+                        alert('hasela tegh');
+                    }
+            },
+        });
+    }
+</script>

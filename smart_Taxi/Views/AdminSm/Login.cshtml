@@ -1,0 +1,40 @@
+﻿@model MvcApplication2.Controllers.LoginModel
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/_LayoutAuth.cshtml";
+}
+
+<script src="~/Content/jquery-1.11.1.js"></script>
+<link rel="stylesheet" type="text/css" href="~/Content/Site.css">
+<div id="all">
+
+
+    @using (Html.BeginForm())
+    {
+        @Html.Label("Հեռախոսահամար")
+        @Html.TextBoxFor(m => m.Phone)
+        @Html.Label("Գախտնաբառ")
+        @Html.TextBoxFor(m => m.Password)
+
+    <input id="reg" type="submit" value="Մուտք">
+    }
+
+    @*@Html.LabelFor("Full Name",Model.UserName)*@
+
+    @*<div id="text">
+            <font id="login">Login</font>
+            <font id="pass">Password</font>
+        </div>
+        <div id="input">
+            <input type="text" />
+
+            <input type="text" />
+        </div>
+    <div id="reg" onclick="myFun()">
+        Registration
+    </div>*@
+
+
+
+</div>

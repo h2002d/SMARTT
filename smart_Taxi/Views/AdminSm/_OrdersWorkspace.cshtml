@@ -1,0 +1,76 @@
+﻿@model smart_Taxi.Models.OrderList
+
+<table id="drv_tbl">
+    <tr>
+        <th>N</th>
+        <th>Հեռախոսի համար</th>
+        <th>Վարորդի Անունը</th>
+        <th>Մեքենա</th>
+        <th>Ամսաթիվ</th>
+    </tr>
+    @foreach (var order in Model.OrdersList)
+    {
+        <tr class="admin_order_rows">
+            <td id="order_admin_id">@order.Id</td>
+            <td>@order.Userphone</td>
+            @if (order.DriverName == "")
+            {
+                <td style="cursor:pointer" onclick="openDriversList(@order.Id)">Ընտրել</td>
+            }
+            else
+            {
+                <td>@order.DriverName</td>
+            }
+            <td>@order.CarName</td>
+            <td>@order.OrderDate</td>
+        </tr>
+    }
+</table>
+<script>
+
+   function openDriversList(orederid)
+   {
+       $('#popup_drivers').css("display", "block");
+       $('#popup_drivers').append('<input type="hidden" id="orderName_Admin" name="zyx" value="' + orederid + '" />');
+       $('#popup_drivers_sub').load('@Url.Action("OrderPopup", "AdminSm")');
+       
+    }
+    $(document).ready(function () {
+        $('.admin_order_rows').click(function () {
+
+            var orderid = $(this).children('#order_admin_id').text();
+            alert(orderid);
+            $.ajax({
+                type: "POST",/*method type*/
+                //contentType: "application/json; charset=utf-8",
+                url: '@Url.Action("GetOrderIfavailable", "AdminSm")',
+                data: { orderid: orderid },
+                success: function (data) {
+                    var image = '@Url.Content("~/Content/Images/map-pointers-man.png")';
+                    var myLatlngord = new google.maps.LatLng(data.Latitude, data.Longitude);
+                    var data = data.Userphone;
+                    var infowindow = new google.maps.InfoWindow({
+                        content: data
+                    });
+
+                    var markerord = new google.maps.Marker({
+                        position: myLatlngord,
+                        map: map,
+                        icon: image,
+                        tooltip: '<B>This is a customized tooltip</B>'
+                    });
+
+
+                    google.maps.event.addListener(markerord, 'mouseover', function () {
+                        infowindow.open(map, markerord);
+                    });
+                    google.maps.event.addListener(markerord, 'mouseout', function () {
+                        infowindow.close(map, markerord);
+                    });
+
+                    markers.push(marker);
+                }
+            });
+        });
+    });
+</script>

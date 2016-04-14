@@ -1,0 +1,121 @@
+﻿@model MvcApplication2.Controllers.LoginModel
+
+
+@{
+    Layout = "~/Views/_LayoutAuth.cshtml";
+    ViewBag.Title = "SpecialRegistration";
+}
+
+<script src="~/Content/jquery-1.11.1.js"></script>
+<link rel="stylesheet" type="text/css" href="~/Content/Site.css">
+<div class="mob_back_map">
+
+</div>
+
+<div class="mob_back">
+
+</div>
+
+<script>
+    function myFun() {
+
+
+        @*$.ajax({
+            url: '@Url.Action("GetData", "Home")',
+            type: "GET",
+
+            success: function (result) {
+                $("#login").append(result.FirstName);
+                $("#pass").append(result.LastName);
+            }
+
+        });*@
+    
+
+        if ($('#Name').val() == "")
+            $('#h3_0').css({ 'opacity': '1', 'transition': '0.5s' });
+        else
+            $('#h3_0').css({ 'visibility': 'hidden' });
+        if ($('#Surname').val() == "")
+            $('#h3_1').css({ 'visibility': 'visible' });
+        else
+            $('#h3_1').css({ 'visibility': 'hidden' });
+        if ($('#Mail').val() == "")
+            $('#h3_2').css({ 'visibility': 'visible' });
+        else
+            $('#h3_2').css({ 'visibility': 'hidden' });
+        if ($('#Phone').val() == "")
+            $('#h3_3').css({ 'visibility': 'visible' });
+        else
+            $('#h3_3').css({ 'visibility': 'hidden' });
+        if ($('#Password').val() == "")
+            $('#h3_4').css({ 'visibility': 'visible' });
+        else
+            $('#h3_4').css({ 'visibility': 'hidden' });
+        if ($('#Confpass').val() == "")
+            $('#h3_5').css({ 'visibility': 'visible' });
+        else
+            $('#h3_5').css({ 'visibility': 'hidden' });
+
+
+    }
+</script>
+
+<div id="er_str">
+    <h3 id="h3_0">*</h3>
+    <h3 id="h3_1">*</h3>
+    <h3 id="h3_2">*</h3>
+    <h3 id="h3_3">*</h3>
+    <h3 id="h3_4">*</h3>
+    <h3 id="h3_5">*</h3>
+</div>
+
+<div id="all_spl_reg">
+@*@using (Html.BeginForm())
+{
+    @Html.Label("Անուն")
+    @Html.TextBoxFor(m => m.Name)
+
+    @Html.Label("Ազգանուն", new { id = "azgn" })
+    @Html.TextBoxFor(m => m.Surname)
+    
+    @Html.Label("E-mail")
+    @Html.TextBoxFor(m => m.Mail)
+    
+    @Html.Label("Հեռախոսահամար")
+    @Html.TextBoxFor(m => m.Phone)
+    
+    @Html.Label("Գախտնաբառ")
+    @Html.TextBoxFor(m => m.Password)
+    
+    @Html.Label("Կրկնեք գախտնաբառը")
+    @Html.TextBoxFor(m => m.Password)
+
+    <input id="reg_spl" value="Registration" type="submit" onclick="myFun()" />
+
+}*@
+
+    <p id="spec_p">Բաժինը գտնվում է նախագծման շրջանում</p>
+</div>
+
+
+@*<div id="registration">
+    <div id="RegInp">
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+    </div>
+    <div id="RegText">
+
+        <font id="name" size="2px">Անուն</font>
+        <font id="surname" size="2px">Ազգանուն</font>
+        <font id="mail" size="2px">E-mail</font>
+        <font id="password" size="2px">Գախտնաբառ</font>
+        <font id="confirm" size="2px">Կրկնեք գախտնաբառը</font>
+        <font id="phone" size="2px">Հեռախոսահամար</font>
+    </div>*@
+
+    

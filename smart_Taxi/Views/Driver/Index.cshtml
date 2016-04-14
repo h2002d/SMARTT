@@ -1,0 +1,102 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_LayoutMobile.cshtml";
+}
+<div id="log_out_driver" style="position:absolute;padding:5px; top: 15px; right:15px; background-color:#0094ff;color:#ffd800;z-index:9999999">
+    Դուրս Գալ
+</div>
+<div class="masg_patver">
+    <p>Դուք ունեք պատվեր</p>
+    <input type="button" value="Ընդունել" onclick="" id="accept" />
+    <input type="button" value="Չնդունել" onclick="" id="cancel" />
+</div>
+<div id="seenTheUser"><p>Հասել եմ Պատվիրատուին</p></div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        setInterval('getLocation()', 17500);
+        setInterval('checkIfOrderIsAvailable()', 16000);
+        $('#log_out_driver').on('click', function () {
+            window.location = "/Home/LogOut/" + 2;
+        });
+        $('#accept').click(function () {
+            var orderID =$('#orderName').val();
+            alert(orderID);
+            $.ajax({
+                type: "POST",/*method type*/
+                //contentType: "application/json; charset=utf-8",
+                url: '@Url.Action("SetOrderStatus", "Driver")',
+                data: { orderId: orderID, status: 1 },
+                success: function () {
+                    $('.masg_patver').css("display","none")
+                },
+                error: function () {
+
+                }
+            });
+        });
+        $('#cancel').click(function () {
+            var orderID = $('#orderName').val();
+            alert(orderID);
+            $.ajax({
+                type: "POST",/*method type*/
+                //contentType: "application/json; charset=utf-8",
+                url: '@Url.Action("SetOrderStatus", "Driver")',
+                data: { orderId: orderID,status:0 },
+                success: function () {
+                    $('.masg_patver').css("display", "none")
+                    $('#seenTheUser').css({'display': 'block'});
+                },
+                error: function () {
+
+                }
+            });
+        });
+    });
+
+    //var x = document.getElementById("demo");
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            //x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+    function showPosition(position) {
+        var lat = position.coords.latitude;
+        var lng = position.coords.longitude;
+
+        $.ajax({
+            type: "POST",/*method type*/
+            //contentType: "application/json; charset=utf-8",
+            url: '@Url.Action("SendDriverLocation", "Driver")',
+            data: { lat: lat, lng: lng },
+            success: function () {
+            },
+            error: function () {
+
+            }
+        });
+    }
+
+    function checkIfOrderIsAvailable() {
+        $.ajax({
+            type: "POST",/*method type*/
+            //contentType: "application/json; charset=utf-8",
+            url: '@Url.Action("GetOrderIfavailable", "Driver")',
+            //data: { lat: lat, lng: lng },
+            success: function (data) {
+                if (data.Id != 0) {
+                    // alert(data.Userphone);
+                    $('.masg_patver').append('<input type="hidden" id="orderName" name="zyx" value="' + data.Id + '" />');
+                    $('.masg_patver').css("display", "block");
+                    //masg_patver display block tal
+                }
+            }
+        });
+    }
+
+
+
+
+</script>
+

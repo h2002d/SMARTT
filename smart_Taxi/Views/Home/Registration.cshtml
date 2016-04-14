@@ -1,0 +1,64 @@
+﻿@model MvcApplication2.Controllers.LoginModel
+
+@{
+    ViewBag.Title = "Registration";
+    Layout = "~/Views/_LayoutAuth.cshtml";
+}
+
+<script src="~/Content/jquery-1.11.1.js"></script>
+<link rel="stylesheet" type="text/css" href="~/Content/Site.css">
+
+
+<div class="mob_back">
+
+</div>
+
+<script type="text/javascript">
+    function myFun(){
+
+        $.ajax({
+            url: '@Url.Action("Registration", "Home")',
+            type: "POST",
+            data: { phone: $('#Phone').val() },
+            success: function (result) {
+                /*$('#reg_gxtn').css({ 'top': '44%', 'visibility': 'visible', 'transition': '1s' })
+                $('#reg_btn').css({ 'position': 'absolute', 'top': '82%', 'transition': '1s', 'opacity': '0' })
+                $('#msg').css({ 'transition': '1.5s', 'opacity': '1' })
+                $('#reg_btn_ent').css({ 'position': 'absolute', 'top': '110%', 'transition': '1.5s', 'opacity': '1' })*/
+                $('#gxtn').css({ 'bottom': '55%', 'transition': '1s', 'visibility': 'visible' });
+                $('#gxtn_mob').css({ 'top': '47%', 'transition': '1s', 'visibility': 'visible' });
+                $('#reg_btn').css({ 'visibility': 'hidden' });
+                $('#reg_btn_ent').css({ 'top': '58%', 'transition': '1s', 'visibility': 'visible' });
+                $('#back_reg').css({ 'top': '78%', 'transition': '1s' });
+            }
+
+        });      
+
+    }
+    function back() {
+        
+            window.location = "/Home/Index";
+        
+    }
+
+</script>
+
+    <div id="msg"><font>@ViewBag.Info</font></div>
+
+    <div id="all">
+
+        @using (Html.BeginForm())
+        {
+            @Html.Label("Հեռախոսահամար", new { id = "hamar_reg" })
+            @Html.TextBoxFor(m => m.Phone, new { id = "hamar_mob" })
+            
+                @Html.Label("Գախտնաբառ", new { id = "gxtn" })
+                @Html.TextBoxFor(m => m.Password, new { id = "gxtn_mob" })
+            
+
+        }
+        <input id="reg_btn" type="button" value="Գրանցվել" onclick="myFun()" />
+        <input id="reg_btn_ent" type="submit" value="Մուտք" onclick="" />
+        <input id="back_reg" type="button" value="Վերադառնալ" onclick="back()"/>
+
+    </div>

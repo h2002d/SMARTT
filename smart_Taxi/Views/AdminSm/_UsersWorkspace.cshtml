@@ -1,0 +1,25 @@
+﻿@model smart_Taxi.Models.UsersList
+
+<table style="width:100%">
+    <tr>
+        <th>N</th>
+        <th>Հաճախորդի Անունը</th>
+        <th>Հաճախորդի համար</th>
+        <th>Պատվերների քանակ</th>
+        <th>Գրանցման ամսաթիվ</th>
+        <th>Երկրորդ համար</th>
+        <th>Էլ. հասցե</th>
+    </tr>
+    @foreach (var person in Model.usersList)
+    {
+        <tr>
+            <td>@person.Id</td>
+            <td>@person.Name</td>
+            <td>@person.Phone</td>
+            <td>0</td>
+            <td>@person.AddDate</td>
+            <td>@person.Card</td>
+            <td>@person.Email</td>
+        </tr>
+    }
+</table>

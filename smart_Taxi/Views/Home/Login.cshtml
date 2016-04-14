@@ -1,0 +1,53 @@
+﻿@model MvcApplication2.Controllers.LoginModel
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/_LayoutAuth.cshtml";
+}
+
+<script src="~/Content/jquery-1.11.1.js"></script>
+<link rel="stylesheet" type="text/css" href="~/Content/Site.css">
+
+<script>
+    function back() {
+
+        window.location = "/Home/Index";
+
+    }
+</script>
+
+<div class="mob_back">
+    
+</div>
+    <div id="all">
+
+
+        @using (Html.BeginForm())
+        {
+            @Html.Label("Հեռախոսահամար", new { id = "hamar_reg" })
+            @Html.TextBoxFor(m => m.Phone, new { id = "log_mob" })
+            @Html.Label("Գախտնաբառ", new { id = "gxtn_log" })
+            @Html.TextBoxFor(m => m.Password, new { id = "inp_log_lab" })
+
+            <input id="reg" type="submit" value="Մուտք">
+            <input id="back_log" type="button" value="Վերադառնալ" onclick="back()" />
+        }
+
+        @*@Html.LabelFor("Full Name",Model.UserName)*@
+
+        @*<div id="text">
+                    <font id="login">Login</font>
+                    <font id="pass">Password</font>
+                </div>
+                <div id="input">
+                    <input type="text" />
+
+                    <input type="text" />
+                </div>
+            <div id="reg" onclick="myFun()">
+                Registration
+            </div>*@
+
+
+
+    </div>

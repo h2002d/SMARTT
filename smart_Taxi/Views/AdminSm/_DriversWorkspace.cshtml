@@ -1,0 +1,53 @@
+﻿@model smart_Taxi.Models.DriverList
+
+
+
+
+
+    <table id="drv_tbl">
+        <tr>
+            <th>N</th>
+            <th>Վարորդի Անունը</th>
+            <th>Հեռախոսի համար</th>
+            <th>Մեքենա</th>
+            <th>Համարանիշ</th>
+            <th>Մեքենայի գույնը</th>
+        </tr>
+        @foreach (var person in Model.driversList)
+        {
+            <tr>
+                <td>@person.Id</td>
+                <td>@person.Name</td>
+                <td>@person.Phone</td>
+                <td>@person.Car_Name</td>
+                <td>@person.Plate</td>
+                <td>@person.Car_Color</td>
+            </tr>
+        }
+    </table>
+    <div class="drivers_workbench">
+        <div class="admin_btn" onclick="popup()">Ավելացնել</div>
+    </div>
+
+<div id="popup">
+    Անուն
+    <input id="name_cr_drive" type="text" />
+
+    համար
+    <input id="phone_cr_drive" type="text" />
+
+    Մեքենա
+    <input id="carname_cr_drive" type="text" />
+
+    Համարանիշ
+    <input id="plate_cr_drive" type="text" />
+
+    գույնը
+    <input id="color_cr_drive" type="text" />
+    տարածաշրջանը
+    <input id="distrinct_cr_drive" type="text" />
+    Գաղտնաբառը
+    <input id="password_cr_drive" type="password" />
+
+    <input type="button" value="create" onclick="createDriver()" />
+</div>

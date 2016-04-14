@@ -1,0 +1,196 @@
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\smart_Taxi.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\smart_Taxi.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\smart_Taxi.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\System.Web.Http.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\System.Web.Razor.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\System.Web.Http.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\System.Web.Razor.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\obj\Debug\smart_Taxi.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\obj\Debug\smart_Taxi.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\smart_Taxi\smart_Taxi\obj\Debug\smart_Taxi.pdb
+E:\aas\smart-t\smart_Taxi\bin\smart_Taxi.dll.config
+E:\aas\smart-t\smart_Taxi\bin\smart_Taxi.dll
+E:\aas\smart-t\smart_Taxi\bin\smart_Taxi.pdb
+E:\aas\smart-t\smart_Taxi\bin\Microsoft.Web.Infrastructure.dll
+E:\aas\smart-t\smart_Taxi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\aas\smart-t\smart_Taxi\bin\Newtonsoft.Json.dll
+E:\aas\smart-t\smart_Taxi\bin\System.Net.Http.Formatting.dll
+E:\aas\smart-t\smart_Taxi\bin\System.Web.Helpers.dll
+E:\aas\smart-t\smart_Taxi\bin\System.Web.Http.dll
+E:\aas\smart-t\smart_Taxi\bin\System.Web.Http.WebHost.dll
+E:\aas\smart-t\smart_Taxi\bin\System.Web.Mvc.dll
+E:\aas\smart-t\smart_Taxi\bin\System.Web.Razor.dll
+E:\aas\smart-t\smart_Taxi\bin\System.Web.WebPages.Deployment.dll
+E:\aas\smart-t\smart_Taxi\bin\System.Web.WebPages.dll
+E:\aas\smart-t\smart_Taxi\bin\System.Web.WebPages.Razor.dll
+E:\aas\smart-t\smart_Taxi\bin\Newtonsoft.Json.xml
+E:\aas\smart-t\smart_Taxi\bin\System.Net.Http.Formatting.xml
+E:\aas\smart-t\smart_Taxi\bin\System.Web.Helpers.xml
+E:\aas\smart-t\smart_Taxi\bin\System.Web.Http.xml
+E:\aas\smart-t\smart_Taxi\bin\System.Web.Http.WebHost.xml
+E:\aas\smart-t\smart_Taxi\bin\System.Web.Mvc.xml
+E:\aas\smart-t\smart_Taxi\bin\System.Web.Razor.xml
+E:\aas\smart-t\smart_Taxi\bin\System.Web.WebPages.xml
+E:\aas\smart-t\smart_Taxi\bin\System.Web.WebPages.Deployment.xml
+E:\aas\smart-t\smart_Taxi\bin\System.Web.WebPages.Razor.xml
+E:\aas\smart-t\smart_Taxi\obj\Debug\smart_Taxi.dll
+E:\aas\smart-t\smart_Taxi\obj\Debug\smart_Taxi.pdb
+E:\aas\smart-t\smart_Taxi\obj\Debug\smart_Taxi.csprojResolveAssemblyReference.cache
+D:\aas\smart-t\smart_Taxi\bin\smart_Taxi.dll.config
+D:\aas\smart-t\smart_Taxi\bin\smart_Taxi.dll
+D:\aas\smart-t\smart_Taxi\bin\smart_Taxi.pdb
+D:\aas\smart-t\smart_Taxi\bin\Microsoft.Web.Infrastructure.dll
+D:\aas\smart-t\smart_Taxi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\aas\smart-t\smart_Taxi\bin\Newtonsoft.Json.dll
+D:\aas\smart-t\smart_Taxi\bin\System.Net.Http.Formatting.dll
+D:\aas\smart-t\smart_Taxi\bin\System.Web.Helpers.dll
+D:\aas\smart-t\smart_Taxi\bin\System.Web.Http.dll
+D:\aas\smart-t\smart_Taxi\bin\System.Web.Http.WebHost.dll
+D:\aas\smart-t\smart_Taxi\bin\System.Web.Mvc.dll
+D:\aas\smart-t\smart_Taxi\bin\System.Web.Razor.dll
+D:\aas\smart-t\smart_Taxi\bin\System.Web.WebPages.Deployment.dll
+D:\aas\smart-t\smart_Taxi\bin\System.Web.WebPages.dll
+D:\aas\smart-t\smart_Taxi\bin\System.Web.WebPages.Razor.dll
+D:\aas\smart-t\smart_Taxi\bin\Newtonsoft.Json.xml
+D:\aas\smart-t\smart_Taxi\bin\System.Net.Http.Formatting.xml
+D:\aas\smart-t\smart_Taxi\bin\System.Web.Helpers.xml
+D:\aas\smart-t\smart_Taxi\bin\System.Web.Http.xml
+D:\aas\smart-t\smart_Taxi\bin\System.Web.Http.WebHost.xml
+D:\aas\smart-t\smart_Taxi\bin\System.Web.Mvc.xml
+D:\aas\smart-t\smart_Taxi\bin\System.Web.Razor.xml
+D:\aas\smart-t\smart_Taxi\bin\System.Web.WebPages.xml
+D:\aas\smart-t\smart_Taxi\bin\System.Web.WebPages.Deployment.xml
+D:\aas\smart-t\smart_Taxi\bin\System.Web.WebPages.Razor.xml
+D:\aas\smart-t\smart_Taxi\obj\Debug\smart_Taxi.csprojResolveAssemblyReference.cache
+D:\aas\smart-t\smart_Taxi\obj\Debug\smart_Taxi.dll
+D:\aas\smart-t\smart_Taxi\obj\Debug\smart_Taxi.pdb
+D:\smart-t\smart_Taxi\bin\smart_Taxi.dll.config
+D:\smart-t\smart_Taxi\bin\smart_Taxi.dll
+D:\smart-t\smart_Taxi\bin\smart_Taxi.pdb
+D:\smart-t\smart_Taxi\bin\Microsoft.Web.Infrastructure.dll
+D:\smart-t\smart_Taxi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\smart-t\smart_Taxi\bin\Newtonsoft.Json.dll
+D:\smart-t\smart_Taxi\bin\System.Net.Http.Formatting.dll
+D:\smart-t\smart_Taxi\bin\System.Web.Helpers.dll
+D:\smart-t\smart_Taxi\bin\System.Web.Http.dll
+D:\smart-t\smart_Taxi\bin\System.Web.Http.WebHost.dll
+D:\smart-t\smart_Taxi\bin\System.Web.Mvc.dll
+D:\smart-t\smart_Taxi\bin\System.Web.Razor.dll
+D:\smart-t\smart_Taxi\bin\System.Web.WebPages.Deployment.dll
+D:\smart-t\smart_Taxi\bin\System.Web.WebPages.dll
+D:\smart-t\smart_Taxi\bin\System.Web.WebPages.Razor.dll
+D:\smart-t\smart_Taxi\bin\Newtonsoft.Json.xml
+D:\smart-t\smart_Taxi\bin\System.Net.Http.Formatting.xml
+D:\smart-t\smart_Taxi\bin\System.Web.Helpers.xml
+D:\smart-t\smart_Taxi\bin\System.Web.Http.xml
+D:\smart-t\smart_Taxi\bin\System.Web.Http.WebHost.xml
+D:\smart-t\smart_Taxi\bin\System.Web.Mvc.xml
+D:\smart-t\smart_Taxi\bin\System.Web.Razor.xml
+D:\smart-t\smart_Taxi\bin\System.Web.WebPages.xml
+D:\smart-t\smart_Taxi\bin\System.Web.WebPages.Deployment.xml
+D:\smart-t\smart_Taxi\bin\System.Web.WebPages.Razor.xml
+D:\smart-t\smart_Taxi\obj\Debug\smart_Taxi.csprojResolveAssemblyReference.cache
+D:\smart-t\smart_Taxi\obj\Debug\smart_Taxi.dll
+D:\smart-t\smart_Taxi\obj\Debug\smart_Taxi.pdb
+D:\smarttt\smart_Taxi\bin\smart_Taxi.dll.config
+D:\smarttt\smart_Taxi\bin\smart_Taxi.dll
+D:\smarttt\smart_Taxi\bin\smart_Taxi.pdb
+D:\smarttt\smart_Taxi\bin\Microsoft.Web.Infrastructure.dll
+D:\smarttt\smart_Taxi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\smarttt\smart_Taxi\bin\Newtonsoft.Json.dll
+D:\smarttt\smart_Taxi\bin\System.Net.Http.Formatting.dll
+D:\smarttt\smart_Taxi\bin\System.Web.Helpers.dll
+D:\smarttt\smart_Taxi\bin\System.Web.Http.dll
+D:\smarttt\smart_Taxi\bin\System.Web.Http.WebHost.dll
+D:\smarttt\smart_Taxi\bin\System.Web.Mvc.dll
+D:\smarttt\smart_Taxi\bin\System.Web.Razor.dll
+D:\smarttt\smart_Taxi\bin\System.Web.WebPages.Deployment.dll
+D:\smarttt\smart_Taxi\bin\System.Web.WebPages.dll
+D:\smarttt\smart_Taxi\bin\System.Web.WebPages.Razor.dll
+D:\smarttt\smart_Taxi\bin\Newtonsoft.Json.xml
+D:\smarttt\smart_Taxi\bin\System.Net.Http.Formatting.xml
+D:\smarttt\smart_Taxi\bin\System.Web.Helpers.xml
+D:\smarttt\smart_Taxi\bin\System.Web.Http.xml
+D:\smarttt\smart_Taxi\bin\System.Web.Http.WebHost.xml
+D:\smarttt\smart_Taxi\bin\System.Web.Mvc.xml
+D:\smarttt\smart_Taxi\bin\System.Web.Razor.xml
+D:\smarttt\smart_Taxi\bin\System.Web.WebPages.xml
+D:\smarttt\smart_Taxi\bin\System.Web.WebPages.Deployment.xml
+D:\smarttt\smart_Taxi\bin\System.Web.WebPages.Razor.xml
+D:\smarttt\smart_Taxi\obj\Debug\smart_Taxi.csprojResolveAssemblyReference.cache
+D:\smarttt\smart_Taxi\obj\Debug\smart_Taxi.dll
+D:\smarttt\smart_Taxi\obj\Debug\smart_Taxi.pdb
+D:\www\smart_Taxi\bin\smart_Taxi.dll.config
+D:\www\smart_Taxi\bin\smart_Taxi.dll
+D:\www\smart_Taxi\bin\smart_Taxi.pdb
+D:\www\smart_Taxi\bin\Microsoft.Web.Infrastructure.dll
+D:\www\smart_Taxi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\www\smart_Taxi\bin\Newtonsoft.Json.dll
+D:\www\smart_Taxi\bin\System.Net.Http.Formatting.dll
+D:\www\smart_Taxi\bin\System.Web.Helpers.dll
+D:\www\smart_Taxi\bin\System.Web.Http.dll
+D:\www\smart_Taxi\bin\System.Web.Http.WebHost.dll
+D:\www\smart_Taxi\bin\System.Web.Mvc.dll
+D:\www\smart_Taxi\bin\System.Web.Razor.dll
+D:\www\smart_Taxi\bin\System.Web.WebPages.Deployment.dll
+D:\www\smart_Taxi\bin\System.Web.WebPages.dll
+D:\www\smart_Taxi\bin\System.Web.WebPages.Razor.dll
+D:\www\smart_Taxi\bin\Newtonsoft.Json.xml
+D:\www\smart_Taxi\bin\System.Net.Http.Formatting.xml
+D:\www\smart_Taxi\bin\System.Web.Helpers.xml
+D:\www\smart_Taxi\bin\System.Web.Http.xml
+D:\www\smart_Taxi\bin\System.Web.Http.WebHost.xml
+D:\www\smart_Taxi\bin\System.Web.Mvc.xml
+D:\www\smart_Taxi\bin\System.Web.Razor.xml
+D:\www\smart_Taxi\bin\System.Web.WebPages.xml
+D:\www\smart_Taxi\bin\System.Web.WebPages.Deployment.xml
+D:\www\smart_Taxi\bin\System.Web.WebPages.Razor.xml
+D:\www\smart_Taxi\obj\Debug\smart_Taxi.dll
+D:\www\smart_Taxi\obj\Debug\smart_Taxi.pdb
+D:\www\smart_Taxi\obj\Debug\smart_Taxi.csprojResolveAssemblyReference.cache
+D:\aas\smarttt\smart_Taxi\bin\smart_Taxi.dll.config
+D:\aas\smarttt\smart_Taxi\bin\smart_Taxi.dll
+D:\aas\smarttt\smart_Taxi\bin\smart_Taxi.pdb
+D:\aas\smarttt\smart_Taxi\bin\Microsoft.Web.Infrastructure.dll
+D:\aas\smarttt\smart_Taxi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\aas\smarttt\smart_Taxi\bin\Newtonsoft.Json.dll
+D:\aas\smarttt\smart_Taxi\bin\System.Net.Http.Formatting.dll
+D:\aas\smarttt\smart_Taxi\bin\System.Web.Helpers.dll
+D:\aas\smarttt\smart_Taxi\bin\System.Web.Http.dll
+D:\aas\smarttt\smart_Taxi\bin\System.Web.Http.WebHost.dll
+D:\aas\smarttt\smart_Taxi\bin\System.Web.Mvc.dll
+D:\aas\smarttt\smart_Taxi\bin\System.Web.Razor.dll
+D:\aas\smarttt\smart_Taxi\bin\System.Web.WebPages.Deployment.dll
+D:\aas\smarttt\smart_Taxi\bin\System.Web.WebPages.dll
+D:\aas\smarttt\smart_Taxi\bin\System.Web.WebPages.Razor.dll
+D:\aas\smarttt\smart_Taxi\bin\Newtonsoft.Json.xml
+D:\aas\smarttt\smart_Taxi\bin\System.Net.Http.Formatting.xml
+D:\aas\smarttt\smart_Taxi\bin\System.Web.Helpers.xml
+D:\aas\smarttt\smart_Taxi\bin\System.Web.Http.xml
+D:\aas\smarttt\smart_Taxi\bin\System.Web.Http.WebHost.xml
+D:\aas\smarttt\smart_Taxi\bin\System.Web.Mvc.xml
+D:\aas\smarttt\smart_Taxi\bin\System.Web.Razor.xml
+D:\aas\smarttt\smart_Taxi\bin\System.Web.WebPages.xml
+D:\aas\smarttt\smart_Taxi\bin\System.Web.WebPages.Deployment.xml
+D:\aas\smarttt\smart_Taxi\bin\System.Web.WebPages.Razor.xml
+D:\aas\smarttt\smart_Taxi\obj\Debug\smart_Taxi.csprojResolveAssemblyReference.cache
+D:\aas\smarttt\smart_Taxi\obj\Debug\smart_Taxi.dll
+D:\aas\smarttt\smart_Taxi\obj\Debug\smart_Taxi.pdb

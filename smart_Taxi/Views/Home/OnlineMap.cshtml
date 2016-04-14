@@ -1,0 +1,84 @@
+﻿@{
+    ViewBag.Title = "OnlineMap";
+    Layout = "~/Views/_LayoutMobile.cshtml";
+}
+
+<div></div>
+
+<script>
+    function call_pop() {
+        if ($('#approve_order').css('display') == 'none') {
+            $('#approve_order').fadeIn();
+        }
+        else {
+            $('#approve_order').fadeOut();
+        }
+    }
+    $(document).ready(function () {       
+        setInterval('getDriversLocation()', 5000);
+    });
+
+    function checkOrderStatus() {
+        $.ajax({
+            type: "POST",/*method type*/
+            contentType: "application/json; charset=utf-8",
+            url: '@Url.Action("checkOrderStatus", "Home")',
+            success: function (data) {
+                var status = data.split(",");
+                if (status[0] == "1") {
+                    //yndunelu action
+                    alert(status[1]);
+                }
+                else
+                    if (status[0] == "2") {
+                        //hasela tegh
+                        alert('hasela tegh');
+                    }
+            },
+        });
+    }
+    function getDriversLocation() {
+        $.ajax({
+            type: "POST",/*method type*/
+            contentType: "application/json; charset=utf-8",
+            url: '@Url.Action("GetDriversPositions", "Home")',/*Target function that will be return result*/
+            //data: JSON.stringify({ name: name, phone: phone, carname: carname, plate: plate, color: color, distrinct: distrinct, password: password }),
+            success: function (data) {
+                deleteMarkers();
+                $.each(data, function (index, item) {
+
+                    var image = '@Url.Content("~/Content/Images/pointer.png")';
+                    // $("#cat").append('<li>'+item.Name+'</li>');
+                    var myLatlng = new google.maps.LatLng(item.Latitude, item.Longitude);
+                    // alert(item.Name);
+
+                    addMarker(myLatlng, image, item.Name);
+                    ////var marker = new google.maps.Marker({
+                    ////    position: myLatlng,
+                    ////    map: map,                            
+                    ////    title: item.name
+                    ////});                       
+                });
+            },
+            error: function () {
+                alert("Error");
+            }
+        });
+    }
+</script>
+
+
+<div class="main-buttons" style="top:90% !important;">
+    <div class="main-btn" style="padding-left:60px;" id="order-btn_approve" onclick="call_pop()">
+       Պատվիրել
+    </div>
+</div>
+<div id="log_out_user" style="position:absolute;padding:5px; top: 15px; right:15px; color:#FFC102;z-index:9999999; font-size: 20px; cursor: pointer; text-shadow: 15px 5px 6px black;">
+    Դուրս Գալ
+</div>
+<div id="approve_order">
+    <div class="text_approve">lorem ipsum is the text to display here</div>
+    <div class="main-btn" style="padding-left:60px;" id="order-btn">
+        Պատվիրել
+    </div>
+</div>

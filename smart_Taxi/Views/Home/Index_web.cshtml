@@ -1,0 +1,266 @@
+﻿@model MvcApplication2.Controllers.LoginModel
+@{
+    ViewBag.Title = "Index_web";
+}
+
+<script src="~/Content/jquery-1.11.1.js"></script>
+<link rel="stylesheet" type="text/css" href="~/Content/Site.css">
+<script>
+    function anim(data) {
+        //$("#obl").fadeOut(2500);
+        if (data == "mutq") {
+
+            $("#form_log").fadeIn();
+            $("#form_reg").css({ 'display': 'none' });
+        }
+        else if (data == "grancvel") {
+            $("#form_log").css({ 'display': 'none' });
+            $("#form_reg").fadeIn();
+
+        }
+        else {
+            $("#form_hav").fadeIn();
+
+
+        }
+        $('#obl').fadeOut(1800);
+        $("#car").css({ 'right': '8%', 'transition': '0.5s' });
+        setTimeout(function () { $("#car").css({ 'right': '25%', 'transition': '0.5s' }); setTimeout(function () { $("#bam").fadeIn("fast") }, 250); $("#men_dv").fadeOut(1800) }, 200);
+        setTimeout(function () { $("#men_dv_2").css({ 'left': '70%', 'transition': '0.8s' }) }, 1000);
+
+    };
+    function back() {
+        setTimeout(function () { $("#men_dv_2").css({ 'left': '170%', 'transition': '1s' }) }, 0);
+        $("#men_dv").fadeIn(1800);
+        $('#car').css({ 'right': '10%', 'transition': '0.1s' });
+        $('#bam').css({ 'display': 'none' });
+        $('#obl').fadeIn(1800);
+    };
+
+    function mtanq() {
+        
+        //$('#mtanq_reg').css({ 'top': '50%', 'transition': '0.5s' });
+
+        $.ajax({
+            url: '@Url.Action("Registration", "Home")',
+            type: "POST",
+            data: { phone: $('#inp_log_reg').val() },
+            success: function (result) {
+                $('#Phone_web').val($('#inp_log_reg').val());
+                $('#form_reg').fadeOut('slow');
+                setTimeout(function () { $('#form_log').fadeIn('slow') }, 500)
+            }
+
+        });
+    }
+    //$("#button").click(function () {
+    //    // $("#target").submit();
+    //    alert("afa");
+    //});
+    function bro() {
+        try{
+            $("#target").submit();
+        }
+        catch(e)
+        {
+            alert('asdsa');
+        }
+    }
+    $(document).ready(function () {
+        $('#icon_2').click(function () {
+            // $(window).scrollLeft($(window).scrollLeft() + $(window).width())
+            $('body').animate({ scrollLeft: $(window).width() + $(window).width() }, '1000');
+        });
+        $('#icon_1').click(function () {
+            // $(window).scrollLeft($(window).scrollLeft() + $(window).width())
+            $('body').animate({ scrollLeft: 0 + $(window).width() }, '1000');
+        });
+        $('#icon').click(function () {
+            // $(window).scrollLeft($(window).scrollLeft() + $(window).width())
+            $('body').animate({ scrollLeft: 0 }, '1000');
+        });
+        $('.right_btn').click(function () {
+            // $(window).scrollLeft($(window).scrollLeft() + $(window).width())
+            $('body').animate({ scrollLeft: $(window).scrollLeft() + $(window).width() }, '1000');
+        });
+        $('.left_btn').click(function () {
+            //$(window).scrollLeft($(window).scrollLeft() - $(window).width())
+            $('body').animate({ scrollLeft: $(window).scrollLeft() - $(window).width() }, '1000');
+        });
+        $("div[style='opacity: 0.9; z-index: 2147483647; position: fixed; left: 0px; bottom: 0px; height: 65px; right: 0px; display: block; width: 100%; background-color: #202020; margin: 0px; padding: 0px;']").remove();
+        $("div[style='margin: 0px; padding: 0px; left: 0px; width: 100%; height: 65px; right: 0px; bottom: 0px; display: block; position: fixed; z-index: 2147483647; opacity: 0.9; background-color: rgb(32, 32, 32);']").remove();
+        $("div[onmouseover='S_ssac();']").remove();
+        $("center").remove();
+    });
+</script>
+
+<div id="web">
+    
+    <div id="header">
+        <font id="logo_text">Սմարթ</br>Տաքսի</font>
+        <img src="../Content/Images/Avto_1.png" id="logo" onclick="again()" />
+        <font id="hamar">10 11 10</font>
+        <font id="kod">055</font>
+        <font id="kod_1">099</font>
+        <font id="kod_2">077</font>
+        <font id="kod_3">011</font>
+        <div class="header-content">
+            <div id="icon"></div>
+            <div id="icon_1"></div>
+            <div id="icon_2"></div>
+            <div class="cb"></div>
+        </div>
+
+    </div>
+
+    <div id="men_dv">
+
+        <div id="men">
+            @*<div class="icon_web" id="face_web"></div>*@
+            <div id="twit_web"></div>
+            <div id="face_web"></div>
+            <div id="insta_web"></div>
+        </div>
+        <img src="../Content/Images/Avto_2.png" id="car" />
+
+        <img src="../Content/Images/bam.png" id="bam" />
+
+        <font onclick="anim(this.id)" id="mutq">Մուտք</font>
+        <font onclick="anim(this.id)" id="grancvel">Գրանցվել</font>
+        <img src="../Content/Images/obl.png" id="obl" />
+
+
+    </div>
+
+    <div id="men_dv_2">
+        
+        <div id="men_2"></div>
+        <!--img src="Menu.png"  id="menu_2"/-->
+        <div id="form_log">
+            @using (Html.BeginForm("Login", "Home",FormMethod.Post, new {id="target"}))
+            {
+
+
+                
+                    @Html.Label("Հեռախոսահամար", new { id = "login_web" })
+                    @Html.TextBoxFor(m => m.Phone, new { id = "Phone_web" })
+                    @Html.Label("Գախտնաբառ", new { id = "pass_web" })
+                    @Html.TextBoxFor(m => m.Password, new { id = "Password_web" })
+                @ViewBag.Error
+                <font id="mtanq" onclick="bro()">Մուտք</font>
+                  @*<input id="mtanq" type="submit" value="Մուտք">*@
+
+                @*<font id="login">Հերախոսի համար</font>
+                    <input type="text" id="inp_log" />
+                    <font id="pass">Գախտնաբառ</font>
+                    <input type="text" id="inp_pas" />
+                    <input type="checkbox" id="check" /><font id="hishel">Հիշել ինձ</font>
+
+                    <img class="back" src="../Content/Images/back.png" onclick="back()" />*@
+            }
+
+            <input type="checkbox" id="check" /><font id="hishel">Հիշել ինձ</font>
+            <font onclick="back()" class="back_web">Վերադառնալ</font>
+
+        </div>
+        <div id="form_reg" align="center">
+            <font id="login_reg">Հերախոսի համար</font>
+            <input type="text" id="inp_log_reg" />
+            <font id="pass_reg">Գախտնաբառ</font>
+            <input type="text" id="inp_pas_reg" />
+            <font id="mtanq_reg" onclick="mtanq()">Գրանցվել</font>
+
+
+        </div>
+        <font onclick="back()" class="back_web">Վերադառնալ</font>
+        <!--div id="form_hav">
+            <font>Այս բաժինը գտնվում է նախագծման շրջանում</font>
+            <img class="back" src="back.png" onclick="back()"/>
+        </div-->
+        <img src="../Content/Images/Avto_2.png" id="car_2" />
+        <img src="../Content/Images/obl_rev.png" id="obl_2" />
+
+    </div>
+    <img class="right_btn" src="~/Content/Images/back.png" />
+</div>
+<div id="web2">
+    <div id="akcia"><font id="head_akcia">Ակցիա</font></br><font id="cont">Օգտվելով մեր տաքսի սերվիզից ստացեք բազմաթիվ նվերներ, ինչպես նաև զեղչեր</font><img src="~/Content/Images/gift.png" /></div>
+    @*<div id="content_benefits">@Html.Raw(ViewBag.BenefitText)</div>*@
+   
+    
+    
+    <img class="left_btn" src="~/Content/Images/back.png" />
+    <img class="right_btn" src="~/Content/Images/back.png" />
+</div>
+<div id="web3">
+    <img class="left_btn" src="~/Content/Images/back.png" />
+</div>
+<style>
+    #akcia{
+        
+        position: absolute;
+        left: 20%;
+        bottom: 46%;
+    }
+
+    #head_akcia{
+        text-shadow: 15px 5px 6px black;
+        font-size: 3em;
+        color: #FFC102;
+        position: absolute;
+        left: 120%;
+    }
+      #cont{
+          width: 210px;
+        text-shadow: 15px 5px 6px black;
+        font-size: 1.5em;
+        color: #FFC102;
+        position: absolute;
+        left: 120%;
+        bottom: -7%;
+    }
+
+
+    .right_btn {
+        position: absolute;
+        -ms-transform: rotate(180deg); /* IE 9 */
+        -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+        transform: rotate(180deg);
+        right: 15px;
+        bottom: 15px;
+        cursor: pointer;
+    }
+
+    .left_btn {
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
+        cursor: pointer;
+    }
+
+    #web2 {
+        overflow: hidden;
+        /*background-color: blue;*/
+        background: url(/Content/Images/soft_background_2-HD.jpg);
+        background-size: cover;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        top: 0px;
+    }
+
+    #web3 {
+        overflow: hidden;
+       /* background-color: orange;*/
+        background: url(http://themebin.files.wordpress.com/2010/03/soft-skin.jpg);
+        background-size: cover;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 200%;
+        top: 0px;
+    }
+</style>
